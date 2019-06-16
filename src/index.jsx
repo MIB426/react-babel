@@ -11,8 +11,8 @@ console.log(double); // [2,4,6]
 //React
 import React from 'react';
 import { render } from 'react-dom';
-import ReactMain from './ReactMain'
-render(<ReactMain />, document.getElementById('app2'));
+import Main from './Main'
+render(<Main />, document.getElementById('app2'));
 
 
 if (module.hot) {

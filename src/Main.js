@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import config from './config.json';
 
-class ReactMain extends Component {
+class Main extends Component {
     render() {
         return (
             <div>
@@ -11,4 +11,4 @@ class ReactMain extends Component {
     }
 }
 
-export default ReactMain
+export default Main

@@ -8,7 +8,7 @@ const htmlPlugin = new HtmlWebPackPlugin({
 
 
 module.exports = {
-    entry: './src/index.js',
+    entry: './src/index.jsx',
     output: {
         path: __dirname + '/dist',
         publicPath: '/',
@@ -28,7 +28,7 @@ module.exports = {
                 ]
             },
             {
-                test: /\.(js)$/,
+                test: /\.(js|jsx)$/,
                 exclude: /(node_modules)/,
                 use: {
                     loader: 'babel-loader',
@@ -39,6 +39,10 @@ module.exports = {
             }
         ]
     },
+        
+    resolve: {
+        extensions: ['.js', '.jsx'],
+      },
     devServer: {
         contentBase: './dist',
         hot: true
